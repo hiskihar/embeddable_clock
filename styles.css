@@ -7,7 +7,50 @@ body {
     margin: 0;
 }
 
-#clock {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 32px;
+    border-radius: 32px;
+
+    background-color: var(--skyblue);
+}
+
+.digit {
+    padding: 8px 20px;
+    margin: 4px;
+    border-radius: 8px;
+
+    background-color: white;
+    color: black;
+    box-shadow: var(--shadow-elevation-medium);
+
+    font-family: "JetBrains Mono", monospace;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 800;
+}
+
+:root {
+    --skyblue: #b3d8f1;
+    --shadow-color: 205deg 35% 49%;
+    --shadow-elevation-low:
+            0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.4),
+            0.4px 0.8px 1px -1.4px hsl(var(--shadow-color) / 0.38),
+            1px 2.1px 2.5px -2.7px hsl(var(--shadow-color) / 0.35);
+    --shadow-elevation-medium:
+            0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.42),
+            0.8px 1.6px 1.9px -0.9px hsl(var(--shadow-color) / 0.4),
+            2.1px 4.1px 5px -1.8px hsl(var(--shadow-color) / 0.38),
+            5.2px 10.3px 12.5px -2.7px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+            0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.39),
+            1.4px 2.8px 3.4px -0.4px hsl(var(--shadow-color) / 0.38),
+            2.7px 5.3px 6.5px -0.8px hsl(var(--shadow-color) / 0.37),
+            4.5px 9px 10.9px -1.2px hsl(var(--shadow-color) / 0.36),
+            7.3px 14.6px 17.8px -1.6px hsl(var(--shadow-color) / 0.36),
+            11.6px 23.2px 28.2px -2px hsl(var(--shadow-color) / 0.35),
+            17.9px 35.7px 43.4px -2.4px hsl(var(--shadow-color) / 0.34),
+            26.5px 53px 64.4px -2.7px hsl(var(--shadow-color) / 0.33);
 }
